@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>Editar Usuário</title>
+  <title>Editar Informações</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="container mt-3">
   <nav class="navbar">
     <div class="logo">
-      <h2>Editar usuário</h2>
+      <h2>Editar</h2>
     </div>
     <div class="menu">
       <a id="botao" href="home.php">Voltar</a>

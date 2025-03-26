@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="container mt-3">
   <nav class="navbar">
     <div class="logo">
-      <h2>Cadastro de usuarios</h2>
+      <h2>Cadastro de roupas</h2>
     </div>
     <div class="menu">
       <a id="botao" href="home.php">Voltar</a>
