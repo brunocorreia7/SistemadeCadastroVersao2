@@ -32,8 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $tamanho = $usuario['tamanho'];
         $cor = $usuario['cor'];
         $quantidade = $usuario['quantidade'];
-        $preco_custo = $usuario['preco_custo'];
-        $preco_venda = $usuario['preco_venda'];
+        $preco_custo = number_format($usuario['preco_custo'], 2, ',', ''); // Formata com 2 casas decimais
+        $preco_venda = number_format($usuario['preco_venda'], 2, ',', ''); // Formata com 2 casas decimais
         $fornecedor = $usuario['fornecedor'];
     } else {
         $message = "Usuário não encontrado.";
@@ -93,11 +93,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div class="mb-3">
       <label for="preco_custo" class="form-label">Preço de custo:</label>
-      <input type="number" class="form-control" id="preco_custo" name="preco_custo" value="<?=$preco_custo?>" required>
+      <input type="text" class="form-control" id="preco_custo" name="preco_custo" value="<?=$preco_custo?>" required>
     </div>
     <div class="mb-3">
       <label for="preco_venda" class="form-label">Preço de venda:</label>
-      <input type="number" class="form-control" id="preco_venda" name="preco_venda" value="<?=$preco_venda?>" required>
+      <input type="text" class="form-control" id="preco_venda" name="preco_venda" value="<?=$preco_venda?>" required>
     </div>
     <div class="mb-3">
       <label for="fornecedor" class="form-label">Fornecedor:</label>
