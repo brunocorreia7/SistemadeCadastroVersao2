@@ -56,39 +56,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <form action="" method="post">
     <div class="mb-3 mt-3">
       <label for="descricao" class="form-label">Descrição:</label>
-      <input type="text" class="form-control" id="descricao" name="descricao" required>
+      <input type="text" class="form-control form-control-sm id="descricao" name="descricao" required>
     </div>
     <div class="mb-3">
       <label for="categoria" class="form-label">Categoria:</label>
-      <input type="text" class="form-control" id="categoria" name="categoria" required>
+      <input type="text" class="form-control form-control-sm id="categoria" name="categoria" required>
     </div>
     <div class="mb-3">
       <label for="tamanho" class="form-label">Tamanho:</label>
-      <input type="text" class="form-control" id="tamanho" name="tamanho" required>
+      <input type="text" class="form-control form-control-sm id="tamanho" name="tamanho" required>
     </div>
     <div class="mb-3">
       <label for="cor" class="form-label">Cor:</label>
-      <input type="text" class="form-control" id="cor" name="cor" required>
+      <input type="text" class="form-control form-control-sm id="cor" name="cor" required>
     </div>
     
     <div class="mb-3">
       <label for="quantidade" class="form-label">Quantidade:</label>
-      <input type="number" class="form-control" id="quantidade" name="quantidade" required>
+      <input type="number" class="form-control form-control-sm id="quantidade" name="quantidade" required>
     </div>
 
     <div class="mb-3">
       <label for="preco_custo" class="form-label">Preço de custo:</label>
-      <input type="number" class="form-control" id="preco_custo" name="preco_custo" required>
+      <input type="number" class="form-control form-control-sm id="preco_custo" name="preco_custo" required>
     </div>  
 
     <div class="mb-3">
       <label for="preco_venda" class="form-label">Preço de venda:</label>
-      <input type="number" class="form-control" id="preco_venda" name="preco_venda" required>
+      <input type="number" class="form-control form-control-sm id="preco_venda" name="preco_venda" required>
     </div>
 
     <div class="mb-3">
       <label for="fornecedor" class="form-label">Fornecedor:</label>
-      <input type="text" class="form-control" id="fornecedor" name="fornecedor" required>
+      <input type="text" class="form-control form-control-sm id="fornecedor" name="fornecedor" required>
     </div>
 
     <button type="submit" class="btn btn-primary">Confirmar</button>
