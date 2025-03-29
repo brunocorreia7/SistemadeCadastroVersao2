@@ -19,35 +19,6 @@ if (isset($_GET['search'])) {
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-  .input-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-
-  .input-field {
-    width: 40%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-
-  .submit-btn {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .submit-btn:hover {
-    background-color: #0056b3;
-  }
-</style>
 </head>
 <body>
 
@@ -71,11 +42,11 @@ if (isset($_GET['search'])) {
   <?php endif; ?>
 
   <form method="GET" action="">
-  <div class="input-group mb-3">
-    <input type="text" class="input-field" placeholder="Pesquisar" name="search" value="<?php echo $search; ?>">
-    <button class="submit-btn" type="submit">Pesquisar</button>
-  </div>
-</form>
+    <div class="input-group mb-3 w-50">
+      <input type="text" class="form-control" placeholder="Pesquisar" name="search" value="<?php echo $search; ?>">
+      <button class="btn btn-primary" type="submit">Pesquisar</button>
+    </div>
+  </form>
 
   <table class="table table-dark">
     <thead>

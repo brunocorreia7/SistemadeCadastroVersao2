@@ -32,8 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $tamanho = $usuario['tamanho'];
         $cor = $usuario['cor'];
         $quantidade = $usuario['quantidade'];
-        $preco_custo = number_format($usuario['preco_custo'], 2, ',', ''); // Formata com 2 casas decimais
-        $preco_venda = number_format($usuario['preco_venda'], 2, ',', ''); // Formata com 2 casas decimais
+        $preco_custo = number_format($usuario['preco_custo'], 2, ',', '');
+        $preco_venda = number_format($usuario['preco_venda'], 2, ',', '');
         $fornecedor = $usuario['fornecedor'];
     } else {
         $message = "Usuário não encontrado.";
@@ -81,7 +81,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div class="mb-3">
       <label for="tamanho" class="form-label">Tamanho:</label>
-      <input type="text" class="form-control" id="tamanho" name="tamanho" value="<?=$tamanho?>" required>
+      <select class="form-control" id="tamanho" name="tamanho" required>
+        <option value="PP" <?= ($tamanho == 'PP') ? 'selected' : '' ?>>PP</option>
+        <option value="P" <?= ($tamanho == 'P') ? 'selected' : '' ?>>P</option>
+        <option value="M" <?= ($tamanho == 'M') ? 'selected' : '' ?>>M</option>
+        <option value="G" <?= ($tamanho == 'G') ? 'selected' : '' ?>>G</option>
+        <option value="GG" <?= ($tamanho == 'GG') ? 'selected' : '' ?>>GG</option>
+      </select>
     </div>
     <div class="mb-3">
       <label for="cor" class="form-label">Cor:</label>
