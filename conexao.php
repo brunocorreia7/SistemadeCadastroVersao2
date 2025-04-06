@@ -1,8 +1,8 @@
 <?php
-$servidor = "localhost";
-$dbusuario = "root";
+$servidor = "";
+$dbusuario = "";
 $dbsenha = "";
-$dbname = "lojanova";
+$dbname = "";
 $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
 
 // Verifica a conexão
