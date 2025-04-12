@@ -1,9 +1,8 @@
 <?php
 session_start();
 
-require 'conexao.php'; // Aqui esperamos que a conexão esteja na variável $conn (mysqli)
+require 'conexao.php'; 
 
-// Verifica se o formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $username = trim($_POST['username']);
@@ -11,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (!empty($username) && !empty($password)) {
 
-        // Prepara a consulta com MySQLi
+        
         $sql = "SELECT * FROM users WHERE username = ?";
         $stmt = mysqli_prepare($conn, $sql);
         
